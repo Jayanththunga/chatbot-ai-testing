@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ChatbotRunner-Suite" verbose="1">
+    <parameter name="runTill" value="10" />
+
+    <test name="ChatbotRunner-Test">
+        <classes>
+            <class name="chatbotTest.ChatbotEvaluationTest" />
+        </classes>
+    </test>
+
+</suite>
