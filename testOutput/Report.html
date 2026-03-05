@@ -1,0 +1,804 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 5, 2026 05:10:09 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Greeting/BasicInteraction</a><a class="dropdown-item" href="#">FunctionalQuery</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="Greeting/BasicInteraction"
+          device="">
+          <div class="test-detail">
+            <p class="name">Hello</p>
+            <p class="text-sm">
+              <span>5:10:09 PM</span> / <span>00:00:05:167</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Hello</h5>
+<span class='badge badge-success'>03.05.2026 5:10:09 PM</span>
+<span class='badge badge-danger'>03.05.2026 5:10:14 PM</span>
+<span class='badge badge-default'>00:00:05:167</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Greeting/BasicInteraction</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:09 PM</td>
+        <td>
+          Run #1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:12 PM</td>
+        <td>
+          Hello! How can I assist you today?
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:12 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:12 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:12 PM</td>
+        <td>
+          Run #2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          Hello! How can I assist you today?
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          Consistency: 2/2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          ConsistencyEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="FunctionalQuery"
+          device="">
+          <div class="test-detail">
+            <p class="name">Can you give me a short travel plan to Udupi</p>
+            <p class="text-sm">
+              <span>5:10:14 PM</span> / <span>00:00:21:670</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Can you give me a short travel plan to Udupi</h5>
+<span class='badge badge-success'>03.05.2026 5:10:14 PM</span>
+<span class='badge badge-danger'>03.05.2026 5:10:36 PM</span>
+<span class='badge badge-default'>00:00:21:670</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">FunctionalQuery</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:14 PM</td>
+        <td>
+          Run #1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:23 PM</td>
+        <td>
+          Certainly! Here’s a short travel plan for a trip to Udupi, Karnataka, which is known for its beautiful temples, beaches, and delicious cuisine.
+
+### Travel Plan for Udupi (3 Days)
+
+#### Day 1: Arrival and Local Exploration
+- **Morning:**
+  - Arrive in Udupi (by train, bus, or flight to Mangalore and then a short drive).
+  - Check into your hotel or guesthouse.
+  
+- **Afternoon:**
+  - Visit the **Sri Krishna Temple**, a famous pilgrimage site. Explore the temple complex and learn about its history.
+  - Enjoy lunch at a local eatery; try the Udupi-style meals.
+
+- **Evening:**
+  - Stroll around **Malpe Beach**. Relax on the beach and enjoy the sunset.
+  - Dinner at a beachside restaurant, savoring fresh seafood.
+
+#### Day 2: Temples and Nature
+- **Morning:**
+  - Breakfast at your accommodation or a local café.
+  - Visit **Kadiyali** and **Anantheshwara Temple** for a glimpse of local architecture and spirituality.
+
+- **Afternoon:**
+  - Head to **St. Mary’s Island** (take a ferry from Malpe Beach). Explore the unique geological formations and enjoy some leisure time.
+  - Have lunch on the island or back at Malpe.
+
+- **Evening:**
+  - Return to Udupi and visit **Chaturmurti Temple**.
+  - Dinner at a local restaurant, trying out more regional specialties.
+
+#### Day 3: Cultural and Scenic Highlights
+- **Morning:**
+  - Breakfast and check out from your hotel.
+  - Visit **Udupi's Heritage Village** to experience local culture and crafts.
+
+- **Afternoon:**
+  - Explore **Kaup Beach** and visit the historic **Kaup Lighthouse**. Climb to the top for panoramic views.
+  - Lunch at a nearby café.
+
+- **Evening:**
+  - Return to Udupi, do some last-minute shopping for local handicrafts or snacks.
+  - Depart from Udupi.
+
+### Tips:
+- **Transportation:** Local auto-rickshaws and taxis are available for getting around.
+- **Cuisine:** Don’t miss trying local dishes like dosa, idli, and the famous Udupi sambar.
+- **Best Time to Visit:** October to March for pleasant weather.
+
+Enjoy your trip to Udupi!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:23 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:24 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:24 PM</td>
+        <td>
+          Run #2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:35 PM</td>
+        <td>
+          Sure! Here’s a short travel plan for a trip to Udupi, Karnataka, India. This plan covers a 3-day itinerary, which allows you to explore the key attractions and enjoy the local culture.
+
+### Day 1: Arrival and Local Exploration
+- **Morning:**
+  - Arrive in Udupi (by train, bus, or flight to Mangalore and then a short drive).
+  - Check into your hotel or guesthouse.
+  
+- **Afternoon:**
+  - Visit the **Sri Krishna Temple**, one of the most famous temples in India. Explore the temple complex and learn about its history.
+  - Have lunch at a local restaurant. Try Udupi cuisine, especially the masala dosa or thali.
+
+- **Evening:**
+  - Stroll around **Malpe Beach**. Enjoy the sunset and relax by the shore.
+  - Dinner at a beachside restaurant, enjoying fresh seafood.
+
+### Day 2: Cultural and Natural Attractions
+- **Morning:**
+  - Breakfast at your accommodation or a local café.
+  - Visit **Kaup Beach** and climb the lighthouse for panoramic views.
+
+- **Afternoon:**
+  - Head to **St. Mary’s Island**. Take a boat ride from Malpe Beach and explore the unique geological formations.
+  - Have lunch on the island or back at Malpe.
+
+- **Evening:**
+  - Return to Udupi and visit the **Anantheshwara Temple** and **Chaturmukha Basadi**.
+  - Enjoy dinner at a local eatery, sampling more regional dishes.
+
+### Day 3: Nature and Relaxation
+- **Morning:**
+  - After breakfast, visit **Sankheshwar Temple** and explore the surrounding area.
+  - Optionally, visit **Panchakarma Ayurveda Center** for a wellness treatment.
+
+- **Afternoon:**
+  - Explore the **Udupi Sri Krishna Matha** in more detail or visit nearby attractions like **Manipal** for its university and museums.
+  - Have lunch in Manipal.
+
+- **Evening:**
+  - Return to Udupi and relax at **Kaup Beach** or visit local markets for souvenirs.
+  - Enjoy a farewell dinner at a popular local restaurant.
+
+### Tips:
+- **Transportation:** Consider renting a scooter or using local taxis for convenience.
+- **Accommodation:** Look for hotels or homestays that offer a taste of local hospitality.
+- **Weather:** Check the weather forecast and pack accordingly, as Udupi can be humid.
+
+Enjoy your trip to Udupi!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:35 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:36 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:36 PM</td>
+        <td>
+          Consistency: 2/2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:36 PM</td>
+        <td>
+          ConsistencyEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:36 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="FunctionalQuery"
+          device="">
+          <div class="test-detail">
+            <p class="name">What are top 10 places to visit in India</p>
+            <p class="text-sm">
+              <span>5:10:36 PM</span> / <span>00:00:19:821</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">What are top 10 places to visit in India</h5>
+<span class='badge badge-success'>03.05.2026 5:10:36 PM</span>
+<span class='badge badge-danger'>03.05.2026 5:10:56 PM</span>
+<span class='badge badge-default'>00:00:19:821</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">FunctionalQuery</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:36 PM</td>
+        <td>
+          Run #1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:46 PM</td>
+        <td>
+          India is a vast and diverse country with a rich cultural heritage, stunning landscapes, and historical landmarks. Here are ten of the top places to visit in India:
+
+1. **Taj Mahal, Agra**: This iconic white marble mausoleum is a UNESCO World Heritage Site and a symbol of love, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+
+2. **Jaipur, Rajasthan**: Known as the Pink City, Jaipur is famous for its historic palaces, forts, and vibrant bazaars. Key attractions include the Amber Fort, City Palace, and Hawa Mahal.
+
+3. **Varanasi, Uttar Pradesh**: One of the oldest living cities in the world, Varanasi is a spiritual hub for Hindus. The ghats along the Ganges River are famous for their evening aarti ceremonies.
+
+4. **Kerala Backwaters**: A network of lagoons, lakes, and canals, the backwaters of Kerala offer a serene experience. Houseboat cruises through the lush landscapes are a popular way to explore this region.
+
+5. **Goa**: Known for its beautiful beaches, vibrant nightlife, and Portuguese heritage, Goa is a popular destination for both relaxation and adventure.
+
+6. **Ranthambore National Park, Rajasthan**: One of the largest national parks in India, Ranthambore is famous for its tiger population and offers excellent wildlife viewing opportunities.
+
+7. **Hampi, Karnataka**: A UNESCO World Heritage Site, Hampi is known for its stunning ruins of ancient temples and palaces, set against a backdrop of boulder-strewn landscapes.
+
+8. **Leh-Ladakh**: Known for its breathtaking landscapes, monasteries, and adventure activities, Leh-Ladakh is a paradise for nature lovers and thrill-seekers.
+
+9. **Mysore, Karnataka**: Famous for the Mysore Palace, this city is known for its rich history, royal heritage, and the grand Dasara festival.
+
+10. **Darjeeling, West Bengal**: Renowned for its tea plantations and stunning views of the Himalayas, Darjeeling offers a charming hill station experience with attractions like the Darjeeling Himalayan Railway.
+
+These destinations showcase the incredible diversity of India, from its historical landmarks to its natural beauty and cultural richness.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:46 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:47 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:47 PM</td>
+        <td>
+          Run #2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:55 PM</td>
+        <td>
+          India is a vast and diverse country with a rich cultural heritage, stunning landscapes, and historical landmarks. Here are ten must-visit places in India, each offering a unique experience:
+
+1. **Taj Mahal, Agra**: This iconic white marble mausoleum is a UNESCO World Heritage Site and a symbol of love, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+
+2. **Jaipur, Rajasthan**: Known as the Pink City, Jaipur is famous for its historic forts and palaces, including the Hawa Mahal, City Palace, and Amber Fort. The vibrant markets and Rajasthani cuisine add to its charm.
+
+3. **Varanasi, Uttar Pradesh**: One of the oldest living cities in the world, Varanasi is a spiritual hub for Hindus. The ghats along the Ganges River, especially during the evening aarti, offer a mesmerizing experience.
+
+4. **Kerala Backwaters**: The serene backwaters of Kerala, especially around Alleppey and Kumarakom, are best explored on a houseboat. The lush greenery and tranquil waters provide a perfect escape.
+
+5. **Goa**: Known for its stunning beaches, vibrant nightlife, and Portuguese heritage, Goa is a popular destination for both relaxation and adventure. The beaches of Baga, Anjuna, and Palolem are particularly famous.
+
+6. **Ranthambore National Park, Rajasthan**: A prime spot for wildlife enthusiasts, this national park is known for its population of Bengal tigers and offers thrilling safari experiences.
+
+7. **Leh-Ladakh**: Known for its breathtaking landscapes, monasteries, and adventure activities, Leh-Ladakh is a paradise for nature lovers and thrill-seekers. The Pangong Lake and Nubra Valley are highlights.
+
+8. **Mysore, Karnataka**: Famous for the Mysore Palace, this city is known for its royal heritage, vibrant festivals, and the annual Dasara celebration. The nearby Chamundi Hill offers panoramic views.
+
+9. **Hampi, Karnataka**: A UNESCO World Heritage Site, Hampi is known for its ancient temples, ruins, and stunning landscapes. The Virupaksha Temple and Vittala Temple are must-see attractions.
+
+10. **Darjeeling, West Bengal**: Renowned for its tea plantations and stunning views of the Himalayas, Darjeeling offers a charming hill station experience. The Darjeeling Himalayan Railway is a UNESCO World Heritage Site.
+
+These destinations showcase the incredible diversity of India, from its historical landmarks to its natural beauty and spiritual significance.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:55 PM</td>
+        <td>
+          KeywordEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:56 PM</td>
+        <td>
+          SemanticEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:10:56 PM</td>
+        <td>
+          Consistency: 2/2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:56 PM</td>
+        <td>
+          ConsistencyEval PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:10:56 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Greeting/BasicInteraction</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Greeting/BasicInteraction</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:10:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Hello</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">FunctionalQuery</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>FunctionalQuery</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:10:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Can you give me a short travel plan to Udupi</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:10:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>What are top 10 places to visit in India</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 5, 2026 05:10:09 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 5, 2026 05:10:56 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>3</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='54%'><b>18</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>15</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Hello":5.167,"Can you give me a short travel plan to Udupi":21.67,"What are top 10 places to visit in India":19.821
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Greeting/BasicInteraction</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>FunctionalQuery</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 18,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 15
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
